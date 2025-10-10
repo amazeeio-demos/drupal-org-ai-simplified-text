@@ -30,26 +30,26 @@ if [ ! -f "$LOCKFILE" ]; then
 
   cd /app
 
-  if [ -f "$POLYDOCK_APP_IMAGE_DB_FILENAME" ]; then
-    echo "Removing collation from DB ..."
-    sed -i 's/COLLATE=utf8mb3_uca1400_ai_ci //g' $POLYDOCK_APP_IMAGE_DB_FILENAME
-    sed -i 's/COLLATE=utf8mb4_uca1400_ai_ci //g' $POLYDOCK_APP_IMAGE_DB_FILENAME
-    echo "Loading database image"
-    cat $POLYDOCK_APP_IMAGE_DB_FILENAME | drush sql-cli
-    echo "Database image loaded"
-  else
-    echo "There is no database image at: $POLYDOCK_APP_IMAGE_DB_FILENAME"
-  fi;
+    if [ -f "$POLYDOCK_APP_IMAGE_DB_FILENAME" ]; then
+        echo "Removing collation from DB ..."
+        sed -i 's/COLLATE=utf8mb3_uca1400_ai_ci.*;/;/g' $POLYDOCK_APP_IMAGE_DB_FILENAME
+        sed -i 's/COLLATE=utf8mb4_uca1400_ai_ci.*;/;/g' $POLYDOCK_APP_IMAGE_DB_FILENAME
+        echo "Loading database image"
+        cat $POLYDOCK_APP_IMAGE_DB_FILENAME | drush sql-cli
+        echo "Database image loaded"
+    else
+        echo "There is no database image at: $POLYDOCK_APP_IMAGE_DB_FILENAME"
+    fi;
 
   if [ ! -z "$AI_LLM_API_TOKEN" ]; then
     echo "Importing amazee Private AI keys"
     drush config:set key.key.amazeeio_ai key_provider_settings.key_value $AI_LLM_API_TOKEN -y
   fi;
 
-  if [ ! -z "$AI_LLM_API_URL" ]; then
-    echo "Importing amazee Private AI LLM URL"
-    drush config:set ai_provider_amazeeio.settings host $AI_LLM_API_URL -y
-  fi;
+    if [ ! -z "$AI_LLM_API_URL" ]; then
+        echo "Importing amazee Private AI LLM URL"
+        drush config:set ai_provider_amazeeio.settings host $AI_LLM_API_URL -y
+    fi;
 
   if [ ! -z "$POLYDOCK_GENERATED_APP_ADMIN_USERNAME" ]; then
     echo "Updating admin username to $POLYDOCK_GENERATED_APP_ADMIN_USERNAME"
