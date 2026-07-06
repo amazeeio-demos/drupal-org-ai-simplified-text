@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_formatted_simplified_title
+id: node.article.field_formatted_simplified_title.default
+label: 'Simplified Title Default'
+rule: llm_text
+input_mode: base
+weight: 100
+worker_type: direct
+entity_type: node
+bundle: article
+field_name: field_formatted_simplified_title
+edit_mode: false
+base_field: title
+prompt: "Rewrite the following title to a clear, concise version appropriate for a 6th-grade reading level.\r\n\r\n**Requirements**\r\n- Wrap the output in an <h2> HTML tag.\r\n- Do NOT use a <p> tag under any circumstances.\r\n- Return only the tag and text — no explanation, no line breaks, no commentary.\r\n\r\n**Example of correct output:**\r\n<h2>Why Volcanoes Erupt</h2>\r\n\r\n**Context:**\r\n_______________________________________  \r\n{{ context }}  \r\n_______________________________________"
+token: ''
+plugin_config:
+  automator_enabled: 1
+  automator_rule: llm_text
+  automator_mode: base
+  automator_base_field: title
+  automator_prompt: "Rewrite the following title to a clear, concise version appropriate for a 6th-grade reading level.\r\n\r\n**Requirements**\r\n- Wrap the output in an <h2> HTML tag.\r\n- Do NOT use a <p> tag under any circumstances.\r\n- Return only the tag and text — no explanation, no line breaks, no commentary.\r\n\r\n**Example of correct output:**\r\n<h2>Why Volcanoes Erupt</h2>\r\n\r\n**Context:**\r\n_______________________________________  \r\n{{ context }}  \r\n_______________________________________"
+  automator_token: ''
+  automator_edit_mode: 0
+  automator_label: 'Simplified Title Default'
+  automator_weight: '100'
+  automator_worker_type: direct
+  automator_ai_provider: amazeeio
+  automator_ai_model: claude-3-5-sonnet
+  automator_configuration_max_tokens: '4096'
+  automator_configuration_temperature: '1'
+  automator_configuration_frequency_penalty: '0'
+  automator_configuration_presence_penalty: '0'
+  automator_configuration_top_p: '1'
+  automator_configuration_image_field: ''
+  automator_configuration_image_style: ''
+  automator_joiner: ''
+  automator_joiner_other: ''
+  automator_use_text_format: content_format

@@ -1,0 +1,8 @@
+{
+    "name": "amazeeio-demos/drupal-org-ai-simplified-text",
+    "description": "Site template for the drupal.org/ai simplified text demo.",
+    "require": {
+        "drupal/ai_provider_amazeeio_recipe": "*"
+    },
+    "type": "drupal-recipe"
+}

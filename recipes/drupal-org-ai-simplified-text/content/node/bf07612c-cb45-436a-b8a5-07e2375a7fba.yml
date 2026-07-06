@@ -1,0 +1,45 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bf07612c-cb45-436a-b8a5-07e2375a7fba
+  bundle: article
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'The Effects of Climate Change on Human and Animal Life on Earth.'
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /effects-climate-change-human-and-animal-life-earth
+      langcode: en
+  ai_automator_status:
+    -
+      value: finished
+  field_body:
+    -
+      value: '<p>Climate change significantly impacts human health, exacerbating existing conditions and creating new threats. As temperatures rise, heatwaves have become more frequent and severe, leading to heat-related illnesses and increased mortality rates, especially among vulnerable populations such as the elderly, children, and those with chronic illnesses. Additionally, climate-induced extreme weather events, such as floods and hurricanes, displace communities, disrupt healthcare systems, and heighten the incidence of waterborne and vector-borne diseases.</p><p>Agricultural productivity and food security are increasingly jeopardized by climate change. Elevated temperatures, altered precipitation patterns, and increased frequency of extreme weather events directly affect crop yields, leading to food shortages and price volatility. This reduction in agricultural output particularly affects developing regions, where many communities rely heavily on subsistence farming, thereby intensifying food insecurity, malnutrition, and socioeconomic disparities.</p><p>Economic systems globally are strained under the pressures of climate change, causing substantial financial burdens and disruptions. Increased frequency and severity of natural disasters necessitate substantial investments in emergency responses, infrastructure repairs, and preventive measures. Furthermore, sectors like tourism, agriculture, and fishing face declining productivity, leading to job losses, reduced incomes, and economic instability, particularly affecting regions dependent on climate-sensitive industries.</p><p>Climate change profoundly affects biodiversity and animal populations by altering habitats and ecological balances. Rising global temperatures disrupt migratory patterns, breeding cycles, and food availability for numerous species. Consequently, animals unable to adapt swiftly enough face increased risks of extinction, reducing biodiversity and undermining ecosystem stability.</p><p>Marine species are particularly vulnerable to climate change due to ocean warming and acidification. Increased ocean temperatures lead to widespread coral bleaching, destroying essential habitats for countless marine organisms. Acidification, driven by higher carbon dioxide levels, compromises the ability of shell-forming marine species, such as mollusks and corals, to build their protective structures, thus threatening their survival and destabilizing entire marine ecosystems.</p><p>Changes in sea ice coverage and melting polar ice caps drastically affect polar ecosystems and the animals that inhabit them. Species such as polar bears, walruses, and penguins rely on sea ice for hunting, breeding, and migration. Reduced sea ice cover forces these animals to travel greater distances to find food, increasing energy expenditure and reducing reproductive success, thereby threatening their survival.</p><p>Rising sea levels, driven by melting glaciers and thermal expansion of seawater, present severe threats to coastal communities worldwide. Coastal flooding, erosion, and saltwater intrusion damage infrastructure, contaminate freshwater resources, and displace populations. These challenges exacerbate socioeconomic inequalities, as low-income communities often lack resources to mitigate or recover from these impacts.</p><p>Climate-driven ocean changes affect global fisheries and the communities that depend on them. Shifts in ocean temperature and chemistry alter fish distributions and productivity, disrupting commercial and subsistence fishing activities. Declines in fish populations threaten food security, economic livelihoods, and cultural practices, especially in coastal and indigenous communities highly reliant on marine resources.</p><p>The ocean’s capacity to act as a carbon sink diminishes as climate change progresses, exacerbating global warming. Higher temperatures and acidification reduce the ocean’s efficiency in absorbing and storing carbon dioxide, thus accelerating atmospheric greenhouse gas concentrations. This feedback loop intensifies climate change effects, creating an escalating cycle of environmental degradation.</p><p>Addressing climate change necessitates immediate global collaboration and decisive policy action. Strategies such as reducing greenhouse gas emissions, enhancing renewable energy adoption, and implementing sustainable agricultural practices are critical for mitigating climate impacts. Effective adaptation measures, coupled with robust international cooperation, are essential to safeguard human well-being, biodiversity, and ocean health for future generations.</p>'
+      format: content_format
+      summary: 'Climate change significantly impacts human health, exacerbating existing conditions and creating new threats. As temperatures rise, heatwaves have become more frequent and severe, leading to heat-related illnesses and increased mortality rates, especially among vulnerable populations such as the elderly, children, and those with chronic illnesses. Additionally, climate-induced extreme weather events, such as floods and hurricanes, displace communities, disrupt healthcare systems, and heighten the incidence of waterborne and vector-borne diseases.'
+  field_simplified_text:
+    -
+      value: "<h3>How Climate Change Affects Our Health</h3><p>Climate change is making people sicker. As the Earth gets hotter, we see more heatwaves. These can make people very ill, especially older folks, kids, and people who are already sick. Big storms like floods and hurricanes are also happening more often. These can hurt people and make it hard to get medical help. They can also spread diseases through water and bugs.</p><h3>Food and Farming Problems</h3><p>Climate change is making it harder to grow food. Hotter weather, less rain in some places, and more big storms are hurting crops. This means less food and higher prices. Poor countries that depend on farming are having a really tough time. Many people don't have enough to eat.</p><h3>Money Troubles</h3><p>Climate change is costing us a lot of money. We have to spend more to fix damage from storms and floods. Some jobs, like farming and fishing, are getting harder. This means people are losing work and making less money. Places that rely on tourism are also having problems.</p><h3>Animals and Nature in Danger</h3><p>Climate change is hurting animals and plants. Many can't find food or places to live as the weather changes. Some animals might even die out completely. This is bad for nature's balance.</p><h3>Oceans in Trouble</h3><p>The oceans are getting warmer and more acidic. This is killing coral reefs, which are homes for many sea creatures. It's also making it hard for some animals to make their shells. Many sea animals are in danger because of this.</p><h3>Ice Melting, Animals Suffering</h3><p>The ice at the North and South Poles is melting. This is very bad for animals like polar bears and penguins. They need ice to hunt and live on. Now they have to swim farther to find food, which makes life much harder for them.</p><h3>Rising Seas, Flooding Cities</h3><p>As ice melts and oceans get warmer, sea levels are rising. This causes flooding in cities near the coast. It can ruin buildings, make drinking water salty, and force people to move. Poor communities often suffer the most from this.</p><h3>Fishing Problems</h3><p>Climate change is making it harder to catch fish. Fish are moving to new places as the water gets warmer. This is bad for people who depend on fishing for food and jobs. Many coastal communities are having a hard time because of this.</p><h3>What We Can Do</h3><p>To fight climate change, everyone needs to work together. We need to use less energy that makes greenhouse gases. We should use more clean energy like solar and wind power. We also need to farm in ways that are better for the Earth. If we all help, we can make things better for people, animals, and the planet.</p>"
+      format: content_format
+      summary: ''

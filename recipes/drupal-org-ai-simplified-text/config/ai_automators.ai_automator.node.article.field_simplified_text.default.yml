@@ -1,0 +1,41 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_simplified_text
+id: node.article.field_simplified_text.default
+label: 'Simplified Text Default'
+rule: llm_text_with_summary
+input_mode: base
+weight: 100
+worker_type: batch
+entity_type: node
+bundle: article
+field_name: field_simplified_text
+edit_mode: false
+base_field: field_body
+prompt: "Rewrite the main body content (between the “Context:” delimiters) for a general audience at a 6th‑grade reading level. Preserve all key ideas and logical flow, but simplify vocabulary and sentence structure. Ignore the field called title.\r\n\r\n1. Rewrite the body into 8–10 paragraphs, using simple language. Save this to field_simplified_text body.\r\n2. Rewrite the summary into a short, friendly overview (maximum 2 short paragraphs) appropriate for a general audience. Save this to field_simplified_text summary.\r\n\r\nRequirements:\r\n\t•\tFor the body, you may use only these HTML tags: <h3>, <em>, <strong>.\r\n\t•\tFor the summary, do not use any HTML.\r\n\t•\tOutput only a valid JSON array structured like this:\r\n\r\n[\r\n  { \"field\": \"body\", \"value\": \"<h2>Rewritten body content...</h2><p>More text...</p>\" },\r\n  { \"field\": \"summary\", \"value\": \"Short rewritten summary text here.\" }\r\n]\r\n\r\n\t•\tDo not include any explanations, markdown, or extra commentary.\r\n\r\nContext:\r\n⸻\r\n{{ context }}\r\n⸻"
+token: ''
+plugin_config:
+  automator_enabled: 1
+  automator_rule: llm_text_with_summary
+  automator_mode: base
+  automator_base_field: field_body
+  automator_prompt: "Rewrite the main body content (between the “Context:” delimiters) for a general audience at a 6th‑grade reading level. Preserve all key ideas and logical flow, but simplify vocabulary and sentence structure. Ignore the field called title.\r\n\r\n1. Rewrite the body into 8–10 paragraphs, using simple language. Save this to field_simplified_text body.\r\n2. Rewrite the summary into a short, friendly overview (maximum 2 short paragraphs) appropriate for a general audience. Save this to field_simplified_text summary.\r\n\r\nRequirements:\r\n\t•\tFor the body, you may use only these HTML tags: <h3>, <em>, <strong>.\r\n\t•\tFor the summary, do not use any HTML.\r\n\t•\tOutput only a valid JSON array structured like this:\r\n\r\n[\r\n  { \"field\": \"body\", \"value\": \"<h2>Rewritten body content...</h2><p>More text...</p>\" },\r\n  { \"field\": \"summary\", \"value\": \"Short rewritten summary text here.\" }\r\n]\r\n\r\n\t•\tDo not include any explanations, markdown, or extra commentary.\r\n\r\nContext:\r\n⸻\r\n{{ context }}\r\n⸻"
+  automator_token: ''
+  automator_edit_mode: 0
+  automator_label: 'Simplified Text Default'
+  automator_weight: '100'
+  automator_worker_type: batch
+  automator_ai_provider: amazeeio
+  automator_ai_model: claude-3-5-sonnet
+  automator_configuration_max_tokens: '4096'
+  automator_configuration_temperature: '.1'
+  automator_configuration_frequency_penalty: '0'
+  automator_configuration_presence_penalty: '0'
+  automator_configuration_top_p: '1'
+  automator_configuration_image_field: ''
+  automator_configuration_image_style: ''
+  automator_joiner: ''
+  automator_joiner_other: ''
+  automator_use_text_format: content_format
