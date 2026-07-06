@@ -28,7 +28,7 @@ plugin_config:
   automator_weight: '100'
   automator_worker_type: batch
   automator_ai_provider: amazeeio
-  automator_ai_model: claude-3-5-sonnet
+  automator_ai_model: chat
   automator_configuration_max_tokens: '4096'
   automator_configuration_temperature: '.1'
   automator_configuration_frequency_penalty: '0'
