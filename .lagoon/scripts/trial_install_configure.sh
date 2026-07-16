@@ -26,6 +26,14 @@ else
     --input=ai_provider_amazeeio_recipe.postgres_db_password=$AI_DB_PASSWORD  \
     --input=ai_provider_amazeeio_recipe.postgres_db_default_database=$AI_DB_NAME 
 
+  # Demos don't self-update; remove the Update Manager stack so admins don't
+  # see "out of date" warnings. Per-module + `|| true` handles both the CMS
+  # demos (all three present) and search (only `update`).
+  echo "Uninstalling update-manager modules"
+  for module in automatic_updates update package_manager; do
+    drush -y pm:uninstall "$module" || true
+  done
+
   # Clear the cache
   echo "Rebuilding of the Drupal cache"
   drush cr
