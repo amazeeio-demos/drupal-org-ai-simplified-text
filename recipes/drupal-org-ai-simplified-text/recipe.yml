@@ -1,0 +1,27 @@
+name: Drupal AI Simplified Text
+type: Site
+description: Drupal CMS (starter) plus the amazee.ai simplified-text demo — an article type whose body is rewritten for a 6th-grade reading level by AI automators.
+recipes:
+  - drupal_cms_starter
+install:
+  - ai
+  - ai_provider_amazeeio
+  - ai_automators
+config:
+  strict: false
+  actions:
+    ai.settings:
+      simpleConfigUpdate:
+        default_providers:
+          chat:
+            provider_id: amazeeio
+            model_id: chat
+          chat_with_complex_json:
+            provider_id: amazeeio
+            model_id: chat_with_complex_json
+          chat_with_image_vision:
+            provider_id: amazeeio
+            model_id: chat_with_image_vision
+          embeddings:
+            provider_id: amazeeio
+            model_id: embeddings
